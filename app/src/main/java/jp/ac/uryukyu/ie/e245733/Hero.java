@@ -34,10 +34,12 @@ public class Hero {
      * @param e 攻撃対象
      */
     public void attack(Enemy e){
+        if (this.dead == false) {
         int damage = (int)(Math.random() * attack);
         System.out.printf("%sの攻撃！%sに%dのダメージを与えた！！\n", name, e.name, damage);
         e.wounded(damage);
     }
+}
 
     /**
      * 自身へ攻撃されたときのダメージ処理をするメソッド。
