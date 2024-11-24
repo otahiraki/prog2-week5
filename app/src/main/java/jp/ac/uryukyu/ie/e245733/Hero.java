@@ -27,37 +27,70 @@ public class Hero {
         this.dead = false;
         System.out.printf("%sのHPは%d。攻撃力は%dです。\n", name, maximumHP, attack);
     }
+/**
+     * 勇者の名前を取得する。
+     * @return 勇者の名前
+     */
     public String getName() {
         return name;
     }
- 
+
+    /**
+     * 勇者の名前を設定する。
+     * @param name 設定する名前
+     */
     public void setName(String name) {
         this.name = name;
     }
- 
+
+    /**
+     * 勇者のHPを取得する。
+     * @return 勇者のHP
+     */
     public int getHitPoint() {
         return hitPoint;
     }
- 
+
+    /**
+     * 勇者のHPを設定する。
+     * @param hitPoint 設定するHP
+     */
     public void setHitPoint(int hitPoint) {
         this.hitPoint = hitPoint;
     }
- 
+
+    /**
+     * 勇者の攻撃力を取得する。
+     * @return 勇者の攻撃力
+     */
     public int getAttack() {
         return attack;
     }
- 
+
+    /**
+     * 勇者の攻撃力を設定する。
+     * @param attack 設定する攻撃力
+     */
     public void setAttack(int attack) {
         this.attack = attack;
     }
- 
+
+    /**
+     * 勇者の死亡状態を取得する。
+     * @return 勇者が死亡している場合はtrue、そうでない場合はfalse
+     */
     public boolean isDead() {
         return dead;
     }
- 
+
+    /**
+     * 勇者の死亡状態を設定する。
+     * @param dead 死亡状態（trueで死亡、falseで生存）
+     */
     public void setDead(boolean dead) {
         this.dead = dead;
     }
+
     /**
      * Enemyへ攻撃するメソッド。
      * attackに応じて乱数でダメージを算出し、hero.wounded()によりダメージ処理を実行。
