@@ -27,7 +27,7 @@ public class Hero {
         this.dead = false;
         System.out.printf("%sのHPは%d。攻撃力は%dです。\n", name, maximumHP, attack);
     }
-/**
+    /**
      * 勇者の名前を取得する。
      * @return 勇者の名前
      */
