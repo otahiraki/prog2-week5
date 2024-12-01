@@ -29,6 +29,10 @@ public class LivingThing {
         return hitPoint;
     }
 
+    public int getAttack() {
+        return attack;
+    }
+
     // 攻撃メソッド
     public void attack(LivingThing opponent) {
         if (!dead) {
